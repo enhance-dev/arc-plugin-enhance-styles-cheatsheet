@@ -1,5 +1,5 @@
 {
-  "name": "@enhance/arc-plugin-enhance-styles-cheatsheet",
+  "name": "@enhance/enhance-styles-cheatsheet",
   "version": "0.0.5",
   "scripts": {
     "lint": "eslint ./**/*.mjs --fix",
