@@ -6,7 +6,7 @@ module.exports = {
       return [
         {
           method: 'get',
-          path: '/_styleguide/cheatsheet',
+          path: '/_styleguide/cribsheet',
           src: join(__dirname, 'src', 'routes'),
           config: {
             views: true,

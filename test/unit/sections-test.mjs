@@ -1,7 +1,7 @@
 import test from 'tape'
 import {
   getSections
-} from '../../src/regex/sections.mjs'
+} from '../../src/routes/api/_styleguide/regex/sections.mjs'
 
 test('should extract sections', t=> {
   const input = `

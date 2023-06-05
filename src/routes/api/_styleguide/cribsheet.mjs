@@ -1,6 +1,6 @@
 import * as csstree from 'css-tree'
 import { getStyles } from '@enhance/arc-plugin-styles'
-import { getSections } from '../../../regex/sections.mjs'
+import { getSections } from './regex/sections.mjs'
 const generatedStyles = getStyles.styleTag()
 const RESET = 'Reset'
 
@@ -36,3 +36,4 @@ export async function get() {
     }
   }
 }
+

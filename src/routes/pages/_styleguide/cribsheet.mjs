@@ -1,5 +1,6 @@
-export default function cheatsheet({ html, state }) {
-  const { styles } = state.store
+export default function cribsheet({ html, state }) {
+  const { store={} } = state
+  const { styles=[] } = store
 
   return html`
 <style scope="global">
