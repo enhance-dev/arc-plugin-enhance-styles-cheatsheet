@@ -1,4 +1,4 @@
-export const sectionRegex =  /\/\*.*?\*\/([\s\S]*?)(?=\/\*.*?\*\/|\n\s*\n|$)/g
+export const sectionRegex = /\/\*\*\*\s*(.+?)\s*\*\*\*\/([\s\S]*?)(?=\/\*.*?\*\/|$)/g
 export const sectionNameRegex = /\/\*.*?\*\//g
 export const sectionNameReplaceRegex = /\/\*\*\*|\*\*\*\//g
 export const otherCommentsRegex = /([^$\s])\/\*.*?\*\/([\s\S]*?)(?=\/\*.*?\*\/|\n\s*\n|$)/gm
@@ -22,7 +22,7 @@ export function getSections(str) {
   let match
   while((match = getSection(input))) {
     const name = getSectionName(match[0].match(sectionNameRegex)[0])
-    const rules = match[1].trim()
+    const rules = match[2].trim()
     sections.push({ name, rules })
   }
 
