@@ -1,6 +1,6 @@
 {
   "name": "@enhance/styles-cribsheet",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "scripts": {
     "lint": "eslint ./**/*.mjs --fix",
     "test": "run-s lint test:**",
