@@ -19,10 +19,10 @@ jobs:
     # Go
     steps:
       - name: Check out repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org/
@@ -34,6 +34,11 @@ jobs:
         run: npm test
         env:
           CI: true
+
+      - name: Integration Tests
+        uses: enhance-dev/actions/integration@main
+        with:
+          use_local_package: 'true'
 
       # Publish to npm
       - name: Publish @RC to npm
